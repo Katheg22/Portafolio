@@ -1,0 +1,946 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* MENU  */
+.Menu-Principal{
+  background: #1e2326;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.Menu-Principal header{
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.Menu-Principal header .logo a {
+  font-family: 'Righteous';
+  font-size: 36px;
+  color: #1cb698;
+  text-decoration: none;
+}
+
+.Menu-Principal header ul{
+  display: flex;
+  list-style: none;
+}
+
+.Menu-Principal header nav ul li a{
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: .5s;
+  text-decoration: none;
+}
+.Menu-Principal header nav ul li a:hover{
+  color: #1cb698;
+}
+
+.nav-responsive{
+  background: #1cb698;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+/* SECCION INICIO */
+.Inicio{
+  background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/fondo.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.Inicio .Contenido-inicio{
+  padding: 20px;
+  background: #1e2326;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.Inicio .Contenido-inicio img {
+  margin-top: 40px;
+  border: 10px solid #1cb698;
+  display: block;
+  width: 80%;
+  margin: auto;
+  border-radius: 100%;
+}
+.Inicio .Contenido-inicio h1{
+  margin-top: 40px;
+  font-size: 45px;
+  font-family: 'Righteous';
+}
+
+.Inicio .Contenido-inicio h2{
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.Inicio .Contenido-inicio .redes a{
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: .3s;
+}
+.Inicio .Contenido-inicio .redes a:hover{
+  background: #1cb698;
+  cursor: pointer;
+}
+
+/* SECCION SOBRE MI  */
+.SobreMi{
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.SobreMi .Contenido-SobreMi{
+  max-width: 1110px;
+  margin: auto;
+}
+
+.SobreMi h2{
+  font-size: 48px;
+  font-family: 'Righteous';
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.SobreMi .Contenido-SobreMi p{
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.SobreMi .Contenido-SobreMi p span{
+  color: #1cb698;
+  font-weight: bold;  
+}
+
+.SobreMi .Filas{
+  display: flex;
+}
+
+.SobreMi .Filas .col{
+  width: 50%;
+}
+
+.SobreMi .Filas .col h3{
+  font-size: 20px;
+  font-family: 'Montserrat, ans-serif';
+  margin-bottom: 25px;
+}
+
+.SobreMi .Filas .col ul{
+  list-style: none;
+}
+
+.SobreMi .Filas .col ul li{
+  margin: 15px 0;
+}
+
+.SobreMi .Filas .col ul li  strong{
+  display: inline-block;
+  width: 84px;
+  color: #1cb698;
+}
+
+.SobreMi .Filas .col ul li span{
+  display: inline-block;
+  color: #1cb698;
+  font-weight: bold; 
+}
+
+.Descv {
+  border: 2px solid #fff;
+  padding: 10px 22px;
+  cursor: pointer;
+  background: transparent;
+  width: fit-content;
+  display: block;
+  margin: auto;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  height: 100%;
+}
+
+.Descv:hover{
+  background-color: #1cb698;
+  /* z-index: -1;
+  transition: 1s; */
+}
+
+hr{
+  width: 80%;
+  color: rgba(30, 35, 38, .8);
+}
+
+.SobreMi .Contenido-SobreMi .Filas .col .Habilidades{
+  /* display: flex; */
+  width: 100%;
+  padding: 0 1px;
+}
+
+.Habilidades strong{
+  margin-right: 16%;
+  font-weight: bold;
+  display: block;
+  font-size: 15px;
+  /* font-family: 'Righteous'; */
+  /* color: #1cb698; */
+}
+
+.Habilidades .Barra-Habilidade{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.Habilidades .Barra-Habilidade .Progreso{
+  background-color: #1cb698;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+}
+
+.Habilidades .Barra-Habilidade  span{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #1cb698;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  top: -17px;
+  right: -15px;
+  font-size: 14px;
+}
+
+.Habilidades .Javascript{
+  width: 0%;
+  animation: 2s Javascript forwards;
+}
+
+@keyframes Javascript{
+  0%{width: 0%;}
+  100%{width: 70%;}
+}
+
+.Habilidades .PHP{
+  width: 0%;
+  animation: 2s PHP forwards;
+}
+
+@keyframes PHP{
+  0%{width: 0%;}
+  100%{width: 50%;}
+}
+
+.Habilidades .Laravel{
+  width: 0%;
+  animation: 2s Laravel forwards;
+}
+
+@keyframes Laravel{
+  0%{width: 0%;}
+  100%{width: 50%;}
+}
+
+.Habilidades .Charp{
+  width: 0%;
+  animation: 2s Charp forwards;
+}
+
+@keyframes Charp{
+  0%{width: 0%;}
+  100%{width: 70%;}
+}
+
+.Habilidades .Html{
+  width: 0%;
+  animation: 2s Html forwards;
+}
+
+@keyframes Html{
+  0%{width: 0%;}
+  100%{width: 80%;}
+}
+
+.Habilidades .Css{
+  width: 0%;
+  animation: 2s Css forwards;
+}
+
+@keyframes Css{
+  0%{width: 0%;}
+  100%{width: 80%;}
+}
+
+.Habilidades .Sql{
+  width: 0%;
+  animation: 2s Sql forwards;
+}
+
+@keyframes Sql{
+  0%{width: 0%;}
+  100%{width: 65%;}
+}
+
+.Habilidades .MySQL{
+  width: 0%;
+  animation: 2s MySQL forwards;
+}
+
+@keyframes MySQL{
+  0%{width: 0%;}
+  100%{width: 60%;}
+}
+
+.Habilidades .Git{
+  width: 0%;
+  animation: 2s Git forwards;
+}
+
+@keyframes Git{
+  0%{width: 0%;}
+  100%{width: 55%;}
+}
+
+/* SECCION PORTAFOLIO  */
+.Portafolio{
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.Portafolio .Contenido-Portafolio{
+  max-width: 1110px;
+  margin: auto;
+}
+
+.Portafolio h2{
+  font-size: 48px;
+  font-family: 'Righteous';
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.Portafolio .Galeria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Portafolio .Galeria .Proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.Portafolio .Galeria .Proyecto img{
+    width: 100%;
+    display: block;
+}
+
+.Portafolio .Galeria .Proyecto .Overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 87%;
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.Portafolio .Galeria .Proyecto .Overlay h3{
+    margin-bottom: 20px;
+    transition:1s;
+}
+
+.Portafolio .Galeria .Proyecto .Overlay:hover{
+  opacity: 1;
+}
+.Portafolio .Galeria .Proyecto .Overlay h3:hover{
+  margin-bottom: 0px;
+  color: #131517;
+}
+.Description-Proyec{
+  border: 3px solid #85a59f;
+  width: 100%;
+  height: 46%;
+  /* position: absolute; */
+  top: -2px;
+  background: linear-gradient(to top, #fff, #f9fafb);
+}
+
+.BotonCerrar{
+  /* text-align: center; */ 
+  margin: 2%;
+  font-size: 13px;
+  /* font-family: monospace; */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.BotonCerrar:hover{
+  background: #ffffff;
+  border-radius: 60%;
+}
+
+.Description-Proyec p {
+  text-align: center;
+  margin: 5px 2px;
+  font-size: 17px;
+  font-family: monospace;
+  color: #131517;
+}
+
+.Detalle-Button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: serif;
+  transition: 1s;
+  color: #FFF;
+}
+#ImagenDetalle{
+  border: 3px solid #85a59f;
+  border-bottom: none;
+}
+.Tecnologias{
+  background: #FFF;
+  color: black;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 0px 3px;
+}
+.Detalle-Button:hover { 
+  margin-bottom: 0px;
+  color: #131517;
+}
+
+.Proyecto-link{  
+  display: flex;
+  justify-content: space-evenly;
+  background: #85a59f;
+  cursor: none;
+}
+
+.Proyecto-link i {
+  font-size: 1.5em;
+  cursor: none;
+}
+
+.Proyecto-link a{
+  text-decoration: none;
+  margin: 5px 0px;
+  cursor: none;
+}
+.button_Copy{
+  border: none;
+  background: none;
+}
+.TlfCopy{
+  color: #FFF !important;
+}
+.TlfCopy:hover{
+  color: #b6b2b2 !important;
+}
+
+/* PORTAFOLIO 2 */
+.Portafolio-Container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.BoxPortafolio{
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem #68827d;
+  overflow: hidden;
+  display: flex;
+}
+
+.BoxPortafolio img{
+  width: 100%;
+  transition: .5s ease;
+}
+
+.BoxPortafolio:hover img{
+  transform: scale(1.1);
+}
+
+.BoxPortafolio .Portafolio-lay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .1), #1f8974);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: .5s ease;
+}
+
+.BoxPortafolio:hover .Portafolio-lay{
+  transform: translateY(0);
+}
+
+.Portafolio-lay h4{
+  font-size: 59px;
+  font-family: 'Righteous';
+}
+
+.Portafolio-lay p{
+  font-size: 15px;
+  margin: 3rem 0 1em;
+}
+
+.Portafolio-lay a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 13%;
+  height: 12%;
+  border-radius: 49%;
+  background-color: #ffffff;
+}
+
+.Portafolio-lay a i{
+  font-size: 15px;
+  color: #131517;
+}
+
+.Portafolio-lay a:hover {
+  background: #76cebd;
+}
+
+
+/* botones  */
+
+.BtnCopy{
+  background: none;
+  border: none;
+  width: 4%;
+}
+
+.BtnCopy:hover{
+  background: #535555;
+  border-radius: 3px;
+}
+
+footer{
+  background-color: #252a2e;
+  color: #fff;
+  padding: 23px 0 18px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+footer .redes{
+  margin-bottom: 20px;
+}
+
+footer .redes a{
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: .3s;
+}
+footer .redes a:hover{
+  background: #1cb698;
+  cursor: pointer;
+}
+
+footer .Arriba{
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #1cb698;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 18px;
+}
+footer .Arriba:hover{
+  background-color: #76ebd4;
+  color: #131517;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width: 1400px) {
+  .BoxPortafolio .Portafolio-lay{
+    transform: translateY(125%);
+  }
+
+  .Portafolio-lay h4 {
+    font-size: 44px;
+  }
+
+  .Portafolio-lay p{
+    font-size: 10px;
+    margin: auto;
+  }
+
+  .Portafolio-lay a i {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .BoxPortafolio .Portafolio-lay{
+    transform: translateY(150%);
+  }
+
+  .Portafolio-lay h4 {
+    font-size: 35px;
+  }
+
+  .Portafolio-lay p{
+    font-size: 10px;
+    margin: auto;
+  }
+
+  .Portafolio-lay a i {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 1056px){
+  .Portafolio-lay h4 {
+    font-size: 25px;
+  }
+
+  .Portafolio-lay p{
+    font-size: 10px;
+    margin: auto;
+  }
+
+  .Portafolio-lay a i {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 1048px){
+  .Portafolio-lay h4 {
+    font-size: 25px;
+  }
+
+  .Portafolio-lay p{
+    font-size: 10px;
+    margin: auto;
+  }
+
+  .Portafolio-lay a i {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 1034px){
+  .Portafolio-lay h4 {
+    font-size: 25px;
+  }
+
+  .Portafolio-lay p{
+    font-size: 10px;
+    margin: auto;
+  }
+
+  .Portafolio-lay a i {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 1029px){
+  .Portafolio-lay h4 {
+    font-size: 25px;
+  }
+
+  .Portafolio-lay p{
+    font-size: 10px;
+    margin: auto;
+  }
+
+  .Portafolio-lay a i {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .Portafolio-lay h4 {
+    font-size: 25px;
+  }
+
+  .Portafolio-lay p{
+    font-size: 10px;
+    margin: auto;
+  }
+
+  .Portafolio-lay a i {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 1005px){
+  .Portafolio-lay h4 {
+    font-size: 25px;
+  }
+
+  .Portafolio-lay p{
+    font-size: 10px;
+    margin: auto;
+  }
+
+  .Portafolio-lay a i {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 986px){
+  .Portafolio-lay h4 {
+    font-size: 25px;
+  }
+
+  .Portafolio-lay p{
+    font-size: 9px;
+    margin: auto;
+  }
+
+  .Portafolio-lay a i {
+    font-size: 9px;
+  }
+}
+
+
+@media screen and (max-width: 980px){
+    nav{
+      display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 75px;
+      background-color: #252a2e;
+      width: 180px;
+  }
+  nav.responsive ul{
+    display: block !important;
+  }
+  nav.responsive ul li{
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+  }
+
+  .BoxPortafolio .Portafolio-lay{
+    transform: translateY(180%);
+  }
+
+  .Portafolio-lay h4 {
+    font-size: 25px;
+  }
+
+  .Portafolio-lay p{
+    font-size: 9px;
+    margin: auto;
+  }
+
+  .Portafolio-lay a i {
+    font-size: 9px;
+  }
+
+}
+
+@media screen and (max-width: 895px) {
+  .BoxPortafolio .Portafolio-lay{
+    transform: translateY(195%);
+  }
+
+  .Portafolio-lay h4 {
+    font-size: 20px;
+  }
+
+  .Portafolio-lay p{
+    font-size: 9px;
+    margin: auto;
+  }
+
+  .Portafolio-lay a i {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 841px) {
+  .BoxPortafolio .Portafolio-lay{
+    transform: translateY(210%);
+  }
+
+  .Portafolio-lay h4 {
+    font-size: 20px;
+  }
+
+  .Portafolio-lay p{
+    font-size: 9px;
+    margin: auto;
+  }
+
+  .Portafolio-lay a i {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 822px) {
+  .BoxPortafolio .Portafolio-lay{
+    transform: translateY(215%);
+  }
+
+  .Portafolio-lay h4 {
+    font-size: 45px;
+  }
+  .Portafolio-lay p{
+    font-size: 20px;
+  }
+
+    .Portafolio .Portafolio-Container{
+      display: block;
+      width: 100%;
+    }
+    .Portafolio .Portafolio-Container .BoxPortafolio{
+      max-width: 100%;
+      margin: 1px 1px 16px 1px;
+    }
+    .Portafolio .Portafolio-Container .BoxPortafolio img{
+      max-width: 100%;
+    }
+    .Portafolio-lay a i {
+      font-size: 15px;
+    }
+  
+}
+
+@media screen and (max-width: 700px){
+  .SobreMi .Filas{
+    display: block;
+  }
+  .SobreMi .Filas .col{
+    width: 100%;
+  }
+  .Habilidades{
+    display: block;
+  }
+  .Habilidades .Barra-Habilidade{
+    width: 100%;
+  }
+  /* .Portafolio .Galeria{
+    display: block;
+    width: 100%;
+  }
+  .Portafolio .Galeria .Proyecto{
+    max-width: 100%;
+  }
+  .Portafolio .Galeria .Proyecto img{
+    max-width: 100%;
+  }
+  h2{
+    font-size: 35px !important;
+  } */
+
+
+  .Portafolio .Portafolio-Container{
+    display: block;
+    width: 100%;
+  }
+  .Portafolio .Portafolio-Container .BoxPortafolio{
+    max-width: 100%;
+  }
+  .Portafolio .Portafolio-Container .BoxPortafolio img{
+    max-width: 100%;
+  }
+
+  .Portafolio-lay h4{
+    font-size: 45px;
+  }
+  
+  .Portafolio-lay p{
+    font-size: 15px;
+    margin: 3rem 0 1em;
+  }
+
+  .BoxPortafolio .Portafolio-lay{
+    transform: translateY(170%);
+  }
+
+  .Portafolio-lay a i {
+    font-size: 15px;
+  }
+}
